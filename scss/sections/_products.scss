@@ -1,0 +1,136 @@
+.products{
+    .product-wrapper{
+        padding: 5rem 0;
+        h2{
+            margin: 0;
+            text-align: center;
+            font-size: 1rem;
+        }
+        p{
+            margin: 0;
+            text-align: center;
+            font-size: 0.6rem;
+            margin-top: 0.6rem;
+            margin-bottom: 2rem;
+            opacity: 0.6;
+        }
+        .product-items{
+            display: flex;
+            flex-direction: column;
+
+            .item{
+                img{
+                    width: 100%;
+                }
+                &:hover{
+                    opacity: 0.6;
+                }
+            }
+        }
+    }
+}
+
+@include media('sm'){
+    .products{
+        .product-wrapper{
+            h2{
+                font-size: 1.2rem;
+            }
+            p{
+                font-size: 0.7rem;
+            }
+            .product-items{
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                margin: 0 -0.6rem;
+
+                .item{
+                    width: 50%;
+                    padding: 0 0.6rem 1rem;
+                }
+            }
+        }
+    }
+}
+
+@include media('md'){
+    .products{
+        .product-wrapper{
+            h2{
+                font-size: 1.4rem;
+            }
+            p{
+                font-size: 0.8rem;
+            }
+        }
+    }
+}
+
+@include media('lg'){
+    .products{
+        .product-wrapper{
+            padding: 6rem 0;
+            h2{
+                font-size: 1.6rem;
+            }
+            
+            .product-items{
+                .item{
+                    width: 33.3334%;
+                }
+            }
+        }
+    }
+}
+
+@include media('xxl'){
+    .products{
+        .product-wrapper{
+            h2{
+                font-size: 1.8rem;
+            }
+            p{
+                font-size: 0.9rem;
+                margin-bottom: 3rem;
+            }
+        }
+    }
+}
+
+// .products {
+//     h2 {
+//         margin: 0;
+//         text-align: center;
+//         padding-top: 6rem;
+//     }
+
+//     p {
+//         margin: 0;
+//         padding-top: 1rem;
+//         padding-bottom: 3rem;
+//         text-align: center;
+//         font-size: 0.8rem;
+//         opacity: 0.6;
+//     }
+
+//     .product-items {
+//         display: flex;
+//         flex-wrap: wrap;
+//         padding-bottom: 6rem;
+//         margin: 0 -0.6rem;
+
+//         .item {
+//             padding: 0 0.6rem 1rem;
+//             width: 33.3334%;
+
+//             img{
+//                 width: 100%;
+//             }
+//             &:hover{
+//                 opacity: 0.6;
+//                 transition: 0.9s;
+//             }
+//         }
+//     }
+// }

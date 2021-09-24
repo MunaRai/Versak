@@ -1,0 +1,173 @@
+.aboutus{
+    padding: 6rem 0;
+
+    h2{
+        font-size: 0.8rem;
+        opacity: 0.8;
+        text-align: center;
+        margin-bottom: 1.5rem;
+        span{
+            color: $primary-color;
+        }
+    }
+    .box-container{
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+        flex-direction: column;
+        text-align: center;
+        .aboutus-box{
+            padding: 2rem 3rem; 
+            img{
+                width: 50px; 
+                height: 50px; 
+            }
+            h3{ 
+                margin-top: 1.5rem;
+                font-size: 0.8rem; 
+            }
+            p{
+                font-size: 0.7rem; 
+                line-height: 1rem;
+                opacity: 0.7;
+            }
+            &:hover{
+                background-color: $lightgrey-color;
+            }
+        }
+    }
+}
+
+@include media('sm'){
+    .aboutus{
+        h2{
+            font-size: 1rem;
+        }
+        .box-container{
+            .aboutus-box{
+                padding: 2rem 8rem;
+            }
+        }
+    }
+}
+
+@include media('md'){
+    .aboutus{
+        h2{
+            font-size: 1rem;
+            // margin-bottom: 3rem;
+        }
+        .box-container{
+            flex-direction: row;
+    
+            .aboutus-box{
+                padding: 2rem 2rem;
+                p{
+                    line-height: 1.5;
+                }
+            }
+        }
+    }
+}
+
+@include media('lg'){
+    .aboutus{
+        h2{
+            font-size: 1.5rem;
+        }
+        .box-container{
+            .aboutus-box{
+                flex: 0 12.5rem;
+                padding: 2rem 0.8rem;
+                p{
+                    font-size: 0.7rem;
+                }
+            }
+        }
+    }
+}
+
+@include media('xl'){
+    .aboutus{
+        h2{
+            font-size: 1.6rem;
+        }
+        .box-container{
+            .aboutus-box{
+                flex: 0 12.5rem;
+                padding: 2rem 0.8rem;
+                p{
+                    font-size: 0.7rem;
+                }
+            }
+        }
+    }
+}
+
+@include media('xxl'){
+    .aboutus{
+        h2{
+            font-size: 1.8rem;
+        }
+        .box-container{
+            .aboutus-box{
+                flex: 0 14rem;
+                padding: 2rem 1.6rem;
+                img{
+                    width: 55px;
+                    height: 55px;
+                }
+                &:hover{
+                    background-color: $lightgrey-color;
+                }
+            }
+        }
+    }
+}
+
+// .aboutus{
+//     padding-top: 6rem;
+//     padding-bottom: 5rem;
+
+//     h2{
+//         text-align: center;
+//         font-size: 1.8rem;
+
+//         span{
+//             color: $primary-color;
+//         }
+//     }
+//     .box-container{
+//         display: flex;
+//         align-items: center;
+//         justify-content: center;
+
+//         .aboutus-box{
+//             background-color: $white-color;
+//             flex: 0 14rem;
+//             text-align: center;
+//             margin: 0.3rem;
+//             padding: 2rem 1rem;
+
+//             img{
+//                 height: 3rem;
+//             }
+
+//             h3{
+//                 margin: 0;
+//                 font-size: 0.8rem;
+//                 padding-top: 1.7rem;
+//             }
+
+//             p{
+//                 font-size: 0.8rem;
+//                 line-height: 1.4rem;
+//                 opacity: 0.7;
+//             }
+
+//             &:hover{
+//                 background-color: $lightgrey-color;
+//             }
+//         }
+//     }
+// }

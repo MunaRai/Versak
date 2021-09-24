@@ -1,0 +1,126 @@
+.feature{
+    width: 100%;
+    text-align: center;
+    padding: 3rem 2rem;
+
+    .f-icon1{
+        img{
+            width: 3rem;
+            height: 3rem;
+        }
+    }
+    h2{
+        font-size: 0.9rem;
+    }
+    p{
+        font-size: 0.7rem;
+        line-height: 1.6;
+        opacity: 0.6;
+        margin: 1.2rem 0;
+    }
+    a{
+        font-size: 0.6rem;
+        color: $primary-color;
+        font-weight: bolder;
+    }
+    &:hover{
+        background-color: $lightgrey-color;
+    }
+}
+
+@include media('sm'){
+    .feature{
+        p{
+            padding: 0 4rem;
+        }
+        a{
+            font-size: 0.7rem;
+        }
+    }   
+}
+@include media('md'){
+    .feature{
+        width: 50%;
+        p{
+            padding: 0;
+        }
+    }
+    &.row3{
+        margin-left: 11.5rem;
+    }
+}
+@include media('lg'){
+    .feature{
+        width: 33.3334%;
+        padding: 2rem 2.5rem;
+    }
+    &.row3{
+        margin-left: 0;
+    }
+}
+@include media('xl'){
+    .feature{
+        .f-icon1{
+            img{
+                width: 3.5rem;
+                height: 3.5rem;
+            }
+        }
+        h2{
+            font-size: 1rem;
+        }
+    }
+}
+@include media('xxl'){
+    .feature{
+        padding: 3rem 3.3rem;
+        .f-icon1{
+            img{
+                width: 4rem;
+                height: 4rem;
+            }
+        }
+        h2{
+            font-size: 1rem;
+            margin: 1.2rem;
+        }
+        p{
+            font-size: 0.8rem;
+            margin-bottom: 1.2rem;
+        }
+    }
+}
+// .feature{
+//     width: 33.3334%;
+//     text-align: center;
+//     padding: 3rem 3.3rem;
+
+//     .f-icon1{
+//         img{
+//             width: 4rem;
+//             height: 4rem;
+//         }   
+//     }
+
+//     h2{
+//         font-size: 1rem;
+//         margin: 1.2rem;
+//     }
+
+//     p{
+//         font-size: 0.8rem;
+//         opacity: 0.6;
+//         line-height: 1.6;
+//         margin-bottom: 1.2rem;
+//     }
+
+//     a{
+//         font-size: 0.7rem;
+//         color: $primary-color;
+//         font-weight: bolder;
+//     }
+//     &:hover{
+//         background-color: $lightgrey-color;
+//     }
+// }
+

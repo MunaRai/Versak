@@ -1,0 +1,57 @@
+%button-style {
+    padding: 1rem 2.2rem;
+    font-size: 1rem;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    display: inline-block;
+
+    &.round {
+        border-radius: 2rem;
+    }
+
+    &.curve {
+        border-radius: 0.2rem;
+    }
+}
+
+.primary-button {
+    @extend %button-style;
+    background-color: $primary-color;
+    color: $white-color;
+    &:hover {
+        background-color: darken($primary-color, 10%);
+    }
+    &:active,
+    &:visited{
+        color: $white-color;
+    }
+}
+
+.secondary-button {
+    @extend %button-style;
+    background-color: $secondary-color;
+    color: $white-color;
+    &:hover {
+        background-color: darken($secondary-color, 10%);
+    }
+
+    &:active,
+    &:visited {
+        color: $white-color;
+    }
+}
+
+.white-button{
+    @extend %button-style;
+    background-color: $white-color;
+    color: $primary-color;
+
+    &:hover {
+        background-color: darken($white-color, 10%);
+    }
+    &:active,
+    &:visited {
+        color: $primary-color;
+    }
+}

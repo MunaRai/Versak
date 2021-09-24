@@ -1,0 +1,197 @@
+.subscribe-section{
+    padding: 3rem 0;
+
+    .subscribe-wrapper{
+        // display: flex;
+
+        .subscribe-img{
+            width: 100%;
+            height: 400px;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .subscribe-form{
+            h2{
+                margin: 0;
+                font-size: 1rem;
+                margin-top: 2rem;
+                margin-bottom: 1rem;
+            }
+            p{
+                margin: 0;
+                font-size: 0.8rem;
+                opacity: 0.6;
+                line-height: 1.6;
+                margin-bottom: 1.5rem;
+            }
+            form{
+                input{
+                    width: 100%;
+                    padding: 0.5rem 1rem;
+                    border: 2px solid $lightgrey-color;
+                    margin-bottom: 1rem;
+                }
+                button{
+                    width: 100%;
+                    margin-top: 1rem;
+                }
+            }
+        }
+    }
+}
+
+@include media('sm'){
+    .subscribe-section{
+        padding: 4rem 0;
+
+        .subscribe-wrapper{
+            .subscribe-img{
+                height: 500px;
+            }
+            .subscribe-form{
+                p{
+                    padding-right: 5rem;
+                }
+                form{
+                    input{
+                        width: 85%;
+                    }
+                }
+            }
+        }
+    }
+}
+@include media('md'){
+    .subscribe-section{
+        .subscribe-wrapper{
+            .subscribe-img{
+                height: 550px;
+            }
+            .subscribe-form{
+                h2{
+                    margin-top: 2.5rem;
+                    font-size: 1.2rem;
+                }
+                p{
+                    padding-right: 18rem;
+                    margin-bottom: 2rem;
+                }
+                form{
+                    input{
+                        width: 100%;
+                        margin-bottom: 1.2rem;
+                    }
+                    button{
+                        margin-top: 1.5rem;
+                    }
+                }
+            }
+        }
+    }
+}
+@include media('lg'){
+    .subscribe-section{
+        .subscribe-wrapper{
+            display: flex;
+            width: 70%;
+            margin: 0 auto;
+            .subscribe-img{
+                width: 50%;
+                height: 450px;
+                z-index: -1;
+            }
+
+            .subscribe-form{
+                width: 50%;
+                padding: 4rem 0 4rem 3rem;
+
+                h2{
+                    font-size: 1rem;
+                    margin-bottom: 1rem;
+                    margin-top: 0;
+                }
+                p{
+                    padding-right: 1.4rem;
+                    margin-bottom: 2rem;
+                }
+                form{
+                    input{
+                        width: 100%;
+                    }
+                    button{
+                        margin-top: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+@include media('xxl'){
+    .subscribe-section{
+        padding: 6rem 0;
+    }
+}
+// .subscribe-section{
+//     padding: 6rem 0;
+
+//     .subscribe-wrapper{
+//         display: flex;
+//         width: 70%;
+//         margin: 0 auto;
+
+//         .subscribe-img{
+//             width: 50%;
+//             background-repeat: no-repeat;
+//             background-size: cover; 
+//             z-index: -1;
+//         }
+
+//         .subscribe-form{
+//             width: 50%;
+//             padding: 5rem 0 5rem 3rem;
+
+//             h2{
+//                 margin: 0;
+//                 font-size: 1.1rem;
+//                 margin-bottom: 1.4rem;
+//             }
+//             p{
+//                 margin: 0;
+//                 font-size: 0.8rem;
+//                 opacity: 0.6;
+//                 line-height: 1.6;
+//                 margin-bottom: 1rem;
+//                 padding-right: 3rem;
+//             }
+            
+//             form{
+
+//                 input{
+//                     width: 100%;
+//                     padding: 0.5rem 1rem;
+//                     border: 2px solid $lightgrey-color;
+//                     margin-bottom: 1rem;
+
+//                 }
+//                 ::-webkit-input-placeholder {
+//                     font-size: 0.7rem;
+
+//                     &:after{
+//                         content: '*';
+//                         color: #f00;
+//                     }
+//                 }
+                
+//                 button{
+//                     width: 100%;
+//                     font-size: 0.8rem;
+//                     line-height: 1;
+//                 }
+
+//             }
+
+//         }
+
+//     }
+
+// }

@@ -1,0 +1,123 @@
+.site-footer{
+    padding: 2rem 0;
+    .footer-wrapper{
+        p{
+            margin: 0;
+            font-size: 0.7rem;
+        }
+        .footer-bar{
+            padding: 0;
+            li{
+                list-style: none;
+                margin-bottom: 0.6rem;
+                a{
+                    margin: 0;
+                    color: $secondary-color;
+                    font-size: 0.7rem;
+
+                    &:hover{
+                        color: $primary-color;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include media('sm'){
+.site-footer{
+    .footer-wrapper{
+        p{
+            font-size: 0.8rem;
+        }
+        .footer-bar{
+            li{
+                a{
+                    font-size: 0.8rem;
+                }
+            }
+        }
+    }
+  }
+}
+@include media('md'){
+.site-footer{
+    padding: 0.5rem 0;
+    .footer-wrapper{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        p{
+            font-size: 0.8rem;
+        }
+        .footer-bar{
+            display: flex;
+            li{
+                margin: 0;
+                margin-left: 1rem;
+                a{
+                    font-size: 0.8rem;
+                }
+            }
+        }
+    }
+  }
+}
+@include media('lg'){
+    .site-footer{
+        padding: 0;
+        .footer-wrapper{
+            .footer-bar{
+                li{
+                    margin-left: 1.5rem;
+                }
+            }
+        }
+    }
+}
+@include media('xxl'){
+    .site-footer{
+        padding: 0;
+        .footer-wrapper{
+            .footer-bar{
+                li{
+                    margin-left: 2rem;
+                }
+            }
+        }
+    }
+}
+// .site-footer{
+
+//     .footer-wrapper{
+//         display: flex;
+//         justify-content: space-between;
+//         align-items: center;
+
+//         p{
+//             margin: 0;
+//             font-size: 0.7rem;
+//         }
+
+//         .footer-bar{
+//             display: flex;
+
+//             li{
+//                 list-style: none;
+//                 margin-left: 2rem;
+
+//                 a{
+//                     margin: 0;
+//                     color: $secondary-color;
+//                     font-size: 0.7rem;
+
+//                     &:hover{
+//                         color: $primary-color;
+//                     }
+//                 }
+                
+//             }
+//         }
+//     }
+
+// }

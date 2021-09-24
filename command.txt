@@ -1,0 +1,5 @@
+node-sass -w scss/style.scss css/style.css
+
+node-sass -w scss/style.scss css/style.css --source-map true
+
+node-sass[sass compiler node's plugin]  -w[watch the changes] scss/style.scss[input to compile scss file]     css/style.css[output of scss file location]

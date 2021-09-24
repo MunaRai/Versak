@@ -1,0 +1,177 @@
+
+    .service{
+        display: flex;
+        flex-direction: column;
+
+        .image{
+            width: 100%;
+            height: 300px;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .description{
+            box-shadow: 0 0 0 0.65rem #{$lightgrey-color} inset;
+
+            .inner-wrapper{
+                padding: 5rem 2rem;
+            }
+             h2{
+                 margin: 0;
+                 font-size: 1.2rem;
+             }
+             .hr-line{
+                 width: 3rem;
+                 height: 0.15rem;
+             }
+             p{
+                margin: 0;
+                font-size: 0.8rem;
+                margin-top: 1.5rem;
+                margin-bottom: 1.5rem;
+                line-height: 1.6;
+                span{
+                    opacity: 0.6;
+                }
+             }
+
+        }
+    }
+    
+    @include media('sm'){
+        .service{
+            .image{
+                height: auto;
+            }
+            .description{
+                .inner-wrapper{
+                    padding: 5rem 4rem;
+                }
+            }
+        }
+    }
+
+    @include media('md'){
+        .service{
+            display: flex;
+            flex-direction: row;
+            .description,
+            .image{
+                width: 50%;
+            }
+            .image{
+                height: auto;
+            }
+        }
+    }
+
+    @include media('lg'){
+        .service{
+            .description{
+                .inner-wrapper{
+                    padding: 6rem 6rem;
+                }
+            }
+            .image{
+                height: auto;
+            }
+        }
+    }
+
+    @include media('xl'){
+        .service{
+            .description{
+                box-shadow: 0 0 0 1.25rem #{$lightgrey-color} inset;
+                .inner-wrapper{
+                    padding-top: 6rem;
+                    padding-bottom: 6rem;
+                    padding-left: 0;
+                    padding-right: 0;
+
+                    h2{
+                        font-size: 1.6rem;
+                    }
+                    .hr-line{
+                        width: 4.2rem;
+                        height: 0.17rem;
+                    }
+                    p{
+                        // font-size: 1rem;
+                        margin-top: 2rem;
+                        margin-bottom: 2rem;
+                    }
+                    &.p-left{
+                        padding-right: calc(100% - 555px);
+                        padding-left: 180px;
+                    }
+                    &.p-right{
+                        padding-left: calc(100% - 555px);
+                        padding-right: 180px;
+                    }
+                }
+                
+            }
+
+            .image{
+                height: auto;
+            }
+        }
+    }
+
+    @include media('xxl'){
+        .service{
+            .description{
+                .inner-wrapper{
+                    &.p-left{
+                        padding-left: calc(100% - 575px);
+                        padding-right: 60px;
+                    }
+                    &.p-right{
+                        padding-right: calc(100% - 575px);
+                        padding-left: 60px;
+                    }
+                }
+            }
+        }
+    }
+
+// .service {
+//     display: flex;
+//     .description,
+//     .image {
+//         width: 50%;
+//     }
+//     .description {
+//         box-shadow: 0 0 0 1.25rem #{$lightgrey-color} inset;
+//         .inner-wrapper {
+//             padding-top: 5rem;
+//             padding-bottom: 5rem;
+            
+//             h2{
+//                 margin: 0;
+//             } 
+
+//             p{
+//                 font-size: 0.8rem;
+//                 line-height: 1.4rem;
+//                 margin-top: 1.1rem;
+//                 margin-bottom: 2rem;
+//                 span{
+//                     opacity: 0.6;
+//                 }
+//             }
+
+            // &.p-left{
+            //     padding-left: calc(100% - 575px);
+            //     padding-right: 60px;
+            // }
+            // &.p-right{
+            //     padding-right: calc(100% - 575px);
+            //     padding-left: 60px;
+            // }
+//         }
+//     }
+//     .image {
+//         background-repeat: no-repeat;
+//         background-size: cover;
+//     }
+// }
